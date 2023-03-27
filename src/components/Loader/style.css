@@ -1,0 +1,19 @@
+.bar-container {
+    background-color: #222222;
+    padding: 2px;
+    border: 1px solid #1e1e1e;
+}
+.bar-completed {
+    background-color: #1e1e1e;
+}
+
+@media only screen and (max-width: 768px) {
+    .bar-container  {
+        height: 10px !important;
+        padding: 0 !important;
+    }
+    .bar-container > div {
+        height: inherit !important;
+    }
+
+}

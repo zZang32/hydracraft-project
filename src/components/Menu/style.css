@@ -1,0 +1,178 @@
+.background-sidebar {
+    background-color: #1f1f1f;
+}
+
+.p-sidebar {
+    padding-left: 2em;
+    margin-right: 1.5em !important;
+    height: 100%;
+}
+
+.text-danger {
+    text-shadow: 0 0 10px red;
+}
+
+.text-info {
+    text-shadow: 0 0 10px cyan;
+}
+
+.text-success {
+    text-shadow: 0 0 10px lightgreen;
+}
+
+.text-url:hover, .text-url:focus {
+    text-decoration: underline;
+    text-shadow: 0 0 10px white;
+}
+
+.button-div-mc {
+    transition: .3s all ease-in-out;
+}
+
+.button-div-mc:hover {
+    cursor: pointer !important;
+    max-width: 100% !important;
+    background-color: #353535 !important;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.active {
+    position: relative;
+    font-family: 'MinecraftBold', 'Courier New', Courier, monospace;
+}
+
+.active::before {
+    content: "";
+    background-color: rgb(235, 235, 235);
+    height: 50%;
+    margin-left: -1em;
+    width: 4px;
+    position: absolute;
+}
+
+.mobile-menu {
+    height: 100vh !important;
+}
+
+.minecraft-icon-design {
+    width: 2em;
+    /* font-family: 'MinecraftNormal', 'Courier New', Courier, monospace !important; */
+}
+
+.minecraft-button {
+    width: 100% !important;
+    
+    background-color: #c6c6c6 !important;
+    border-right: 3px solid #656465 !important;
+    border-bottom: 3px solid #656465 !important;
+    border-top: 3px solid white !important;
+    border-left: 3px solid white !important;
+    font-size: 1.3em;
+    /* height: 100% !important; */
+}
+
+.text-black {
+    color: black;
+}
+
+.twitter-font {
+    color: #00acee;
+    text-shadow:  0 0px 12px #00acee;
+}
+
+.youtube-font {
+    color: #FF0000;
+    text-shadow:  0 0px 12px #FF0000;
+}
+
+
+.tw-mc-icon {
+    max-width: 40px;
+    filter: drop-shadow(0 0 5px #00acee);
+}
+
+.yt-mc-icon {
+    max-width: 40px;
+    filter: drop-shadow(0 0 5px #FF0000);
+}
+
+.dc-mc-icon {
+    max-width: 50px;
+    filter: drop-shadow(0 0 5px #5865F2);
+}
+
+.minecraft-hr {
+    color: #fff;
+    text-decoration: dotted;
+    width: 100%;
+}
+
+/* footer */
+
+.icons-footer > .icon {
+    margin-left: 10px;
+}
+
+.icon:hover, .icon:focus {
+    font-size: 1.4em;
+    transition: .5s;
+}
+
+.tw-footer-icon {
+    color: #000;
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 3px #00acee);
+}
+
+.yt-footer-icon {
+    color: #000;
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 3px #FF0000);
+}
+
+.dc-footer-icon  {
+    color: #000;
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 3px #5865F2);
+}
+
+.hm-footer-icon {
+    color: #000;
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 3px cyan);
+}
+
+.mc-icon {
+    max-width: 25px;
+    -webkit-filter: drop-shadow(0 0 3px lightgreen);
+    filter: drop-shadow(0 0 3px lightgreen);
+}
+
+.torch-icon {
+    filter: drop-shadow(0 0 15px #de7d7d);
+    -webkit-filter: drop-shadow(0 0 15px #de7d7d);
+}
+
+.login-icon {
+    max-width: 50px;
+}
+
+@media only screen and (max-width: 562px) {
+    .tw-mc-icon {
+        max-width: 50px;
+        filter: drop-shadow(0 0 5px #00acee);
+    }
+
+    .yt-mc-icon {
+        max-width: 50px;
+        filter: drop-shadow(0 0 5px #FF0000);
+    }
+    .icons-footer > .icon {
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+    .twitter-mc-icon, .youtube-mc-icon, .discord-mc-icon  {
+        min-width: 50px;
+    }
+}

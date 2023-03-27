@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+
+@font-face {
+  font-family: 'MinecraftBold';
+  src: url('../fonts/MinecraftBold-nMK1.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinecraftNormal';
+  src: url('../fonts/MinecraftRegular-Bmg3.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MinecraftPlay";
+  src: url("../fonts/Minecrafter.Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App {
+  margin: 0;
+  height: 100vh !important;
+}
+
+.overflow-home {
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* FUENTES */
+.fuente-regular-mc {
+  font-family: 'MinecraftNormal', 'Courier New', Courier, monospace;
+}
+
+/* PANTALLA DE CARGA */
+
+.fondo {
+  height: 100% !important;
+  background-color: #0e0e0e;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.banner-mc {
+  font-family: "MinecraftLogo";
+  color: #fefefe;
+  font-size: 6em;
+  margin-bottom: 0.5em;
+}
+
+.network {
+  font-family: "Tilt Warp", cursive;
+  color: #fefefe;
+
+  font-size: 4em;
+  letter-spacing: 1em;
+  margin-bottom: 2em;
+}
+
+/* INICIO DE LA WEB */
+
+.background-main {
+
+  background-color: #292929;
+}
+
+
+/* DISEÑO DE LA PANTALLA PRINCIPAL */
+
+.custom-height {
+  max-height: 80% !important;
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+::-webkit-scrollbar-track {
+  background: #8b8b8b;
+}
+::-webkit-scrollbar-thumb {
+  background: url('../img/menu-bar-scroll.svg') no-repeat #c6c6c6;
+  border-top: solid 2px #ffffff;
+  border-left: solid 2px #ffffff;
+  border-right: solid 2px #555555;
+  border-bottom: solid 2px #555555;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.main-menu-logo {
+  width: 4em !important;
+}
+
+.logo-hydracraft {
+  max-width: 300px !important;
+  filter: drop-shadow(0 0 15px #0083dc);
+}
+
+/* BOTON JUGAR */
+
+.play-button {
+  background-color: #128947;
+  padding: 0.6rem 6rem;
+  margin-top: -20px;
+  border: none;
+  border-top: 5px solid #2ea346 !important;
+  border-bottom: 5px solid #05572d !important;
+  position: relative;
+  outline: 2px solid black;
+  box-shadow: 0 .4rem rgb(0 0 0 / .25);
+  color: white;
+  font-size: 1.5rem;
+  font-family: "MinecraftPlay";
+  text-shadow: 0 2px rgb(65, 65, 65);
+  transition: .3s all ease-in-out;
+}
+
+.play-button::before {
+  content: "";
+  position: absolute;
+  background-color: #05572d;
+  margin-left: -7px;
+  width: 7px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid none solid solid;
+
+}
+
+.play-button::after {
+  content: "";
+  position: absolute;
+  background-color: #05572d;
+  margin-right: -7px;
+  width: 7px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid solid solid none;
+
+}
+
+.play-button:hover {
+  cursor: pointer;
+  background-color: #159c52;
+  transform: scale(1.05);
+}
+
+/* Responsive design for common width's */
+
+@media only screen and (max-width: 562px) {
+  .play-button {
+    padding: 0.6rem 3rem;
+    font-size: 1.3rem;
+  }
+
+  .logo-hydracraft {
+    max-width: 220px !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  
+}

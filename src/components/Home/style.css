@@ -1,0 +1,65 @@
+.scoreboard-line {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.scoreboard {
+    filter: drop-shadow(0 0 2px rgb(17, 21, 21));
+    height: 100%;
+}
+
+.motd {
+    font-size: 2.3em;
+}
+
+.players-description {
+    font-size: 1.5em;
+}
+
+.players-counter {
+    font-size: 1.4em;
+}
+
+.head-menu {
+    max-width: 120px;
+    margin-top: 1.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.head-menu:hover, .head-central-menu {
+    cursor: pointer !important;
+}
+
+.head-central-menu  {
+    margin-top: 2em;
+    max-width: 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dragon-head {
+    min-width: 150px;
+    filter: drop-shadow(0 0 15px red);
+}
+
+.dragon-icon {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-my-icon {
+    padding-bottom: 4px;
+    min-width: 5em !important;
+    filter: drop-shadow(0 0 10px darkgreen);
+}
+
+.menu-dc-icon {
+    padding-bottom: 4px;
+    filter: drop-shadow(0 0 10px #738ADB);
+}
+
+.dragon-icon-tablet {
+    filter: drop-shadow(0 0 10px red);
+    max-width: 100px !important;
+}
