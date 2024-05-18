@@ -44,14 +44,12 @@ export function HydracraftHome() {
     useEffect(() => {
         ServerStatus("mc.hydracraft.es").then((res) => {
             let version = res.version;
-            let motd = res.motd.html[0];
+            let motd = `${res.motd.html[0]}<br />${res.motd.html[1]}`;
             let players = `${res.players.online}/${res.players.max}`;
-            let info = res.info.html;
 
             let serverInfo = {
                 version: version,
                 motd: motd,
-                info: info,
                 players: players
             };
 

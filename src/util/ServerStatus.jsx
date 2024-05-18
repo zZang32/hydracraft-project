@@ -12,6 +12,7 @@ export default function ServerStatus(ip) {
         .then(res => res.json())
         .then(res => {
           if(res.online) {
+            console.log(res)
             resolve(res);
           } else {
             resolve({
